@@ -1,0 +1,5 @@
+# netlify.toml
+[build]
+  base = "/"
+  publish = "frontend/build"  # Replace with the correct directory for your frontend build output
+  command = "python manage.py collectstatic --noinput && python manage.py migrate && python manage.py runserver"  # Replace with the command to start your Django server
